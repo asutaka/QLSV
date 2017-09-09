@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLySinhVienConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLySinhVienConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Quan_ly_sinh_vien.Properties.Settings.GlobalReference.Default.QuanLySinhVienConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sinhvien_lopTableAdapter" GeneratorDataComponentClassName="sinhvien_lopTableAdapter" Name="sinhvien_lop" UserDataComponentName="sinhvien_lopTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLySinhVienConnectionString (Settings)" DbObjectName="QuanLySinhVien.dbo.sinhvien_lop" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        fldID, fldFirstName, fldLastName, fldAge, fldSex, fldCreatedDate, fldClassName
+FROM            sinhvien_lop</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="fldID" DataSetColumn="fldID" />
+              <Mapping SourceColumn="fldFirstName" DataSetColumn="fldFirstName" />
+              <Mapping SourceColumn="fldLastName" DataSetColumn="fldLastName" />
+              <Mapping SourceColumn="fldAge" DataSetColumn="fldAge" />
+              <Mapping SourceColumn="fldSex" DataSetColumn="fldSex" />
+              <Mapping SourceColumn="fldCreatedDate" DataSetColumn="fldCreatedDate" />
+              <Mapping SourceColumn="fldClassName" DataSetColumn="fldClassName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sinhvien_lop" msprop:Generator_TableClassName="sinhvien_lopDataTable" msprop:Generator_TableVarName="tablesinhvien_lop" msprop:Generator_TablePropName="sinhvien_lop" msprop:Generator_RowDeletingName="sinhvien_lopRowDeleting" msprop:Generator_RowChangingName="sinhvien_lopRowChanging" msprop:Generator_RowEvHandlerName="sinhvien_lopRowChangeEventHandler" msprop:Generator_RowDeletedName="sinhvien_lopRowDeleted" msprop:Generator_UserTableName="sinhvien_lop" msprop:Generator_RowChangedName="sinhvien_lopRowChanged" msprop:Generator_RowEvArgName="sinhvien_lopRowChangeEvent" msprop:Generator_RowClassName="sinhvien_lopRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fldID" msprop:Generator_ColumnVarNameInTable="columnfldID" msprop:Generator_ColumnPropNameInRow="fldID" msprop:Generator_ColumnPropNameInTable="fldIDColumn" msprop:Generator_UserColumnName="fldID" type="xs:int" />
+              <xs:element name="fldFirstName" msprop:Generator_ColumnVarNameInTable="columnfldFirstName" msprop:Generator_ColumnPropNameInRow="fldFirstName" msprop:Generator_ColumnPropNameInTable="fldFirstNameColumn" msprop:Generator_UserColumnName="fldFirstName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldLastName" msprop:Generator_ColumnVarNameInTable="columnfldLastName" msprop:Generator_ColumnPropNameInRow="fldLastName" msprop:Generator_ColumnPropNameInTable="fldLastNameColumn" msprop:Generator_UserColumnName="fldLastName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fldAge" msprop:Generator_ColumnVarNameInTable="columnfldAge" msprop:Generator_ColumnPropNameInRow="fldAge" msprop:Generator_ColumnPropNameInTable="fldAgeColumn" msprop:Generator_UserColumnName="fldAge" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="fldSex" msprop:Generator_ColumnVarNameInTable="columnfldSex" msprop:Generator_ColumnPropNameInRow="fldSex" msprop:Generator_ColumnPropNameInTable="fldSexColumn" msprop:Generator_UserColumnName="fldSex" type="xs:boolean" minOccurs="0" />
+              <xs:element name="fldCreatedDate" msprop:Generator_ColumnVarNameInTable="columnfldCreatedDate" msprop:Generator_ColumnPropNameInRow="fldCreatedDate" msprop:Generator_ColumnPropNameInTable="fldCreatedDateColumn" msprop:Generator_UserColumnName="fldCreatedDate" type="xs:dateTime" />
+              <xs:element name="fldClassName" msprop:Generator_ColumnVarNameInTable="columnfldClassName" msprop:Generator_ColumnPropNameInRow="fldClassName" msprop:Generator_ColumnPropNameInTable="fldClassNameColumn" msprop:Generator_UserColumnName="fldClassName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:sinhvien_lop" />
+      <xs:field xpath="mstns:fldID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
