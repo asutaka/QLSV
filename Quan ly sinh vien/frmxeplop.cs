@@ -20,7 +20,7 @@ namespace Quan_ly_sinh_vien
         private Boolean kt;
         private void connect()
         {
-
+            //
             //string cn = "Data Source=KIEN-PC\SQLEXPRESS;Initial Catalog=QuanLySinhVien;Integrated Security=True";
             try
             {
@@ -109,11 +109,11 @@ namespace Quan_ly_sinh_vien
                 commandUpdate.CommandText = @"Update tblStudent Set fldClassID = @fldClassID
                                                             where fldID = @fldID";
                 commandUpdate.Parameters.Add("@fldID", SqlDbType.Int, 50, "MaSV");
+                commandUpdate.Parameters.Add("@fldClassName", SqlDbType.Int, 50, "Tenlop");
                 commandUpdate.Parameters.Add("@fldClassID", SqlDbType.Int, 50, "ClassID");
                 da.UpdateCommand = commandUpdate;
                 da.Update(dt);
                 MessageBox.Show("Bạn đã xếp lớp thành công !", "THÔNG BÁO", MessageBoxButtons.OK);
-
             }
         }
         private void button2_Click(object sender, EventArgs e)  //Nút thoát

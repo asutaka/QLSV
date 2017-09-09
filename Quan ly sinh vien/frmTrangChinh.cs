@@ -81,5 +81,11 @@ namespace Quan_ly_sinh_vien
             frmxeplop _frmxeplop = new frmxeplop();
             _frmxeplop.Show(); 
         }
+
+        private void btnbaocao_Click(object sender, EventArgs e)
+        {
+            frmsinhvienreport _frmsinhvienreport = new frmsinhvienreport();
+            _frmsinhvienreport.Show();
+        }
     }
 }

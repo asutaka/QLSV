@@ -239,6 +239,7 @@
             this.btnbaocao.Size = new System.Drawing.Size(92, 66);
             this.btnbaocao.TabIndex = 6;
             this.btnbaocao.UseVisualStyleBackColor = true;
+            this.btnbaocao.Click += new System.EventHandler(this.btnbaocao_Click);
             // 
             // btnchondetai
             // 
