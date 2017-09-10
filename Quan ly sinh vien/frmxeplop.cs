@@ -101,7 +101,7 @@ namespace Quan_ly_sinh_vien
             {
                 DataRow row = dt.Select("MaSV = " + Convert.ToInt32(cboHoTenSV.SelectedValue))[0];
                 row.BeginEdit();
-                row["Tenlop"] = cboChonlop.SelectedValue;
+                row["ClassID"] = cboChonlop.SelectedValue;
                 row.EndEdit();
                 SqlCommand commandUpdate = new SqlCommand();
                 commandUpdate.Connection = con;
@@ -109,7 +109,7 @@ namespace Quan_ly_sinh_vien
                 commandUpdate.CommandText = @"Update tblStudent Set fldClassID = @fldClassID
                                                             where fldID = @fldID";
                 commandUpdate.Parameters.Add("@fldID", SqlDbType.Int, 50, "MaSV");
-                commandUpdate.Parameters.Add("@fldClassName", SqlDbType.Int, 50, "Tenlop");
+               // commandUpdate.Parameters.Add("@fldClassName", SqlDbType.Int, 50, "Tenlop");
                 commandUpdate.Parameters.Add("@fldClassID", SqlDbType.Int, 50, "ClassID");
                 da.UpdateCommand = commandUpdate;
                 da.Update(dt);
