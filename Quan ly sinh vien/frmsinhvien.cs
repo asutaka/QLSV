@@ -16,7 +16,7 @@ namespace Quan_ly_sinh_vien
         //private SqlConnection con;
         private DataTable dt = new DataTable("tblStudent");
         private SqlDataAdapter da = new SqlDataAdapter();
-        SqlConnection con = new SqlConnection(@"Data Source=KIEN-PC\SQLEXPRESS;Initial Catalog=QuanLySinhVien;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=QuanLySinhVien;Integrated Security=True");
         private Boolean kt;
         private void connect()
         {
@@ -61,7 +61,8 @@ namespace Quan_ly_sinh_vien
                                         fldAge as N'Tuoi',
                                         (Case fldSex when 'True' then N'Nam' else N'Nữ' end) as N'GioiTinh',
                                         fldCreatedDate as N'CreatedDate',
-                                        isNull(fldClassName, 'Chưa học') as N'Tenlop'
+                                        isNull(fldClassName, 'Chưa học') as N'Tenlop',
+                                        fldClassID as N'ClassID'
                                     from tblStudent
                                         left outer join tblClass
                                         on tblStudent.fldClassID = tblClass.fldID";  //Viet cau sql   

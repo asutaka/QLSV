@@ -15,7 +15,7 @@ namespace Quan_ly_sinh_vien
     {
         private DataTable dt = new DataTable("tblStudent");
         private SqlDataAdapter da = new SqlDataAdapter();
-        SqlConnection con = new SqlConnection(@"Data Source=KIEN-PC\SQLEXPRESS;Initial Catalog=QuanLySinhVien;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=QuanLySinhVien;Integrated Security=True");
         //private Boolean kt;
         private void connect()
         {

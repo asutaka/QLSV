@@ -31,10 +31,10 @@ FROM            sinhvien_lop</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sinhvienreportTableAdapter" GeneratorDataComponentClassName="sinhvienreportTableAdapter" Name="sinhvienreport" UserDataComponentName="sinhvienreportTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="QuanLySinhVienConnectionString (Settings)" DbObjectName="QuanLySinhVien.dbo.sinhvienreport" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="QuanLySinhVienConnectionString (Settings)" DbObjectName="QuanLySinhVien.dbo.sinhvienreport" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT        sinhvienreport.*
+                    <CommandText>SELECT        TenLop, SoSV, Thang, Quy, Nam, CreatedDate
 FROM            sinhvienreport</CommandText>
                     <Parameters />
                   </DbCommand>
@@ -59,7 +59,7 @@ FROM            sinhvienreport</CommandText>
   <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="sinhvien_lop" msprop:Generator_TableClassName="sinhvien_lopDataTable" msprop:Generator_TableVarName="tablesinhvien_lop" msprop:Generator_RowChangedName="sinhvien_lopRowChanged" msprop:Generator_TablePropName="sinhvien_lop" msprop:Generator_RowDeletingName="sinhvien_lopRowDeleting" msprop:Generator_RowChangingName="sinhvien_lopRowChanging" msprop:Generator_RowEvHandlerName="sinhvien_lopRowChangeEventHandler" msprop:Generator_RowDeletedName="sinhvien_lopRowDeleted" msprop:Generator_RowClassName="sinhvien_lopRow" msprop:Generator_UserTableName="sinhvien_lop" msprop:Generator_RowEvArgName="sinhvien_lopRowChangeEvent">
+        <xs:element name="sinhvien_lop" msprop:Generator_TableClassName="sinhvien_lopDataTable" msprop:Generator_TableVarName="tablesinhvien_lop" msprop:Generator_TablePropName="sinhvien_lop" msprop:Generator_RowDeletingName="sinhvien_lopRowDeleting" msprop:Generator_RowChangingName="sinhvien_lopRowChanging" msprop:Generator_RowEvHandlerName="sinhvien_lopRowChangeEventHandler" msprop:Generator_RowDeletedName="sinhvien_lopRowDeleted" msprop:Generator_UserTableName="sinhvien_lop" msprop:Generator_RowChangedName="sinhvien_lopRowChanged" msprop:Generator_RowEvArgName="sinhvien_lopRowChangeEvent" msprop:Generator_RowClassName="sinhvien_lopRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="fldID" msprop:Generator_ColumnVarNameInTable="columnfldID" msprop:Generator_ColumnPropNameInRow="fldID" msprop:Generator_ColumnPropNameInTable="fldIDColumn" msprop:Generator_UserColumnName="fldID" type="xs:int" />
@@ -83,7 +83,7 @@ FROM            sinhvienreport</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="sinhvienreport" msprop:Generator_TableClassName="sinhvienreportDataTable" msprop:Generator_TableVarName="tablesinhvienreport" msprop:Generator_TablePropName="sinhvienreport" msprop:Generator_RowDeletingName="sinhvienreportRowDeleting" msprop:Generator_RowChangingName="sinhvienreportRowChanging" msprop:Generator_RowEvHandlerName="sinhvienreportRowChangeEventHandler" msprop:Generator_RowDeletedName="sinhvienreportRowDeleted" msprop:Generator_UserTableName="sinhvienreport" msprop:Generator_RowChangedName="sinhvienreportRowChanged" msprop:Generator_RowEvArgName="sinhvienreportRowChangeEvent" msprop:Generator_RowClassName="sinhvienreportRow">
+        <xs:element name="sinhvienreport" msprop:Generator_TableClassName="sinhvienreportDataTable" msprop:Generator_TableVarName="tablesinhvienreport" msprop:Generator_RowChangedName="sinhvienreportRowChanged" msprop:Generator_TablePropName="sinhvienreport" msprop:Generator_RowDeletingName="sinhvienreportRowDeleting" msprop:Generator_RowChangingName="sinhvienreportRowChanging" msprop:Generator_RowEvHandlerName="sinhvienreportRowChangeEventHandler" msprop:Generator_RowDeletedName="sinhvienreportRowDeleted" msprop:Generator_RowClassName="sinhvienreportRow" msprop:Generator_UserTableName="sinhvienreport" msprop:Generator_RowEvArgName="sinhvienreportRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TenLop" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTenLop" msprop:Generator_ColumnPropNameInRow="TenLop" msprop:Generator_ColumnPropNameInTable="TenLopColumn" msprop:Generator_UserColumnName="TenLop" minOccurs="0">
